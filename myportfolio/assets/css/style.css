@@ -25,6 +25,81 @@ h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+
+
+#home{
+  height: 100vh;
+  width: 95%;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  /* display: flex; */
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 25px 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+  overflow: hidden;
+}
+.cols{
+  width: 50%;
+}
+.topline{
+  display: block;
+  position: relative;
+  letter-spacing: 3px;
+  font-size: 35px;
+  color: #accfe0;
+}
+.topline::after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: #0099df;
+}
+
+.cols h1 {
+  display: block;
+  font-size: 4rem;
+  color: #00405e;
+  font-weight: 900;
+}
+
+.multitext{
+  color: #0099df;
+}
+
+.cols p{
+  display: block;
+  width: 90%;
+  font-size: 12px;
+  color: #060808;
+  justify-content: center;
+  text-align: center;
+  text-justify: auto;
+}
+.wrapper button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 20px;
+  background: #149ddd;
+  font-weight: 900;
+  color: #ffffff;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+}
+.wrapper button:hover{
+  background: #05a8f3d7;
+}
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -96,7 +171,7 @@ h6 {
 }
 
 #header .profile .social-links a {
-  font-size: 18px;
+  font-size: 30px;
   display: inline-block;
   background: #212431;
   color: #fff;
@@ -291,7 +366,14 @@ section {
 .section-bg {
   background: #f5f8fd;
 }
-
+.section-first{
+  padding: 10px;
+}
+.section-first h1 {
+  font-size: 70px;
+  color: #173b6c;
+  
+}
 .section-title {
   padding-bottom: 30px;
 }
@@ -318,6 +400,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
